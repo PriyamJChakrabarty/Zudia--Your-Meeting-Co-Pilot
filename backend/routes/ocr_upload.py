@@ -71,7 +71,7 @@ from pydantic import BaseModel
 from typing import Union, Dict
 
 # ✅ Initialize Gemini client once
-os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY", "AIzaSyBNHeDNS2hJ5rc68Zs_woomjeCdlBe5wQU")
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 def generate_from_gemini(prompt: str, model: str = "gemini-2.5-flash") -> str:
