@@ -9,7 +9,7 @@ from typing import List, Optional, Any, Literal
 import google.genai as genai
 from google.genai import types
 
-os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY", "AIzaSyDYyP_2j1VcgWbfUzsgSaM6rC7U-D9893k")
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 # ---
