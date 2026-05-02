@@ -11,7 +11,7 @@ from datetime import date # For date fields in the response model
 import google.genai as genai
 from google.genai import types
 
-os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY", "AIzaSyBbbnpcyVVLCOmcdGRNnkmvI0AcnGLq0nU")
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY")
 client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 # ---
 # 1. DEFINE DATA MODELS
